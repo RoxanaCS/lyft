@@ -1,22 +1,29 @@
-/*
- * Estilos de tu proyecto
- */
- body {
-   margin: 0 auto;
-   overflow-x: hidden; /*esto funciona, pero no lo entiendo*/
-   float: left;
-   font-family: 'Montserrat', sans-serif;
- }
- header{
-   position: fixed;
-   width: 100%;
- }
-#logo{
+/*limpiar el body*/
+body {
+  margin: 0 auto;
+  overflow-x: hidden; /*esto funciona, pero no lo entiendo*/
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+}
+/*formato de la cabecera*/
+header{
+  position: fixed;
+  width: 100%;
+/*outline: 1px solid green;*/
+}
+ header #logo{
   width: 4em;
   float: left;
   margin: 0.5em 5em 0 5em;
   /*outline: 1em solid green;*/
 }
+header #logo2{
+  width: 0;
+  float: left;
+  margin: 0.5em 0 0 5em;
+/*outline: 1em solid green;*/
+}
+/*formato del menú horizontal*/
 header nav ul{
   list-style: none;
   overflow: auto;
@@ -28,7 +35,7 @@ header nav li {
   margin-top: 1em;
   margin-left: 3em;
   float: left;
-  /*outline: 1em solid green;*/
+/*outline: 1em solid green;*/
 }
 header nav li:last-child {
   margin-top: 0.2em;
@@ -48,39 +55,96 @@ header nav a{
 header nav a:hover {
   color: #FF00BF;
 }
-/*formato de la primera sección*/
-#section1{
-
-  /*outline: 2px solid yellow;*/
+/*segundo header que cambia cuando se hace scroll*/
+.header2{
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
+.header2 #logo{
+  width: 0;
+  float: left;
+  margin: 0.5em 5em 0 5em;
+/*outline: 1em solid green;*/
+}
+/*para que el logo cambie de blanco a rosado*/
+.header2 #logo2{
+  width: 4em;
+  float: left;
+  margin-left: -5em;
+/*outline: 1em solid green;*/
+}
+/*formato del menú horizontal*/
+.header2 nav ul{
+  list-style: none;
+  overflow: auto;
+  width: 30em;
+  margin-top: 2em;
+  margin-left: 40em;
+}
+.header2 nav li {
+  margin-top: 1em;
+  margin-left: 3em;
+  float: left;
+/*outline: 1em solid green;*/
+}
+.header2 nav li:last-child {
+  margin-top: 0.2em;
+  padding: 2% 0 2% 0;
+  width: 5em;
+  text-align: center;
+  border: 0.12em solid #728099;
+  border-radius: 0.4em 0.4em 0.4em 0.4em;
+  -moz-border-radius: 0.4em 0.4em 0.4em 0.4em;
+  -webkit-border-radius: 0.4em 0.4em 0.4em 0.4em;
+}
+.header2 nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+.header2 nav a:hover {
+  color: #FF00BF;
+}
+/*formato de la primera sección*/
+.section1{
+/*outline: 2px solid yellow;*/
+}
+/*poner el video de fondo*/
+/*ARREGLAR ESTO*/
 video{
   position: fixed;
   width: 100%;
   z-index: -1;
   margin-top: -5.5em;
 }
+/*contenedor blanco de contacto*/
 .box1{
   display: inline-block;
-  width: 31em;
-  height: 25.7em;
+  width: 33em;
+  height: 28em;
   background: white;
-  margin-top: 8em;
-  margin-left: 48em;
-  margin-right: 0
-  /*outline: 0.1em solid red;*/
+  margin-top: 6.1em;
+  margin-left: 46em;
+  left: 50px;
+  top: 50px;
+/*outline: 0.1em solid red;*/
 }
-#section1 h1{
+/*formato del título del contenedor blanco*/
+.section1 h1{
   font-size: 2.5em;
   width: 8em;
   margin: 1.5em 0 0 2em;
   color: #352384;
-  }
+}
+/*formato del subtítulo del contenedor blanco*/
 #sub{
   margin: 0;
   width: 20em;
   margin-left: 5em;
   color: #352384;
 }
+/*formato del teléfono del contenedor blanco*/
 #phone{
   margin-top: 2em;
   width: 20em;
@@ -88,16 +152,9 @@ video{
   margin-bottom: 0;
   color: #728099;
 }
-#sub2{
-  margin-top: 2em;
-  font-size: 0.6em;
-  width: 30em;
-  margin-left: 9em;
-  line-height: 2em;
-  color: #728099;
-}
-hr {
-  border: 0.05em solid #352384;
+/*línea horizontal*/
+.section1 hr {
+  border: 0.04em solid #352384;
   margin-left: 5em;
   width: 20em;
 }
@@ -106,7 +163,7 @@ hr {
   overflow: auto;
   margin-left: 2em;
 }
-#section1 .box1 li:first-child a{
+.section1 .box1 li:first-child a{
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -117,58 +174,171 @@ hr {
   -moz-border-radius: 0.4em 0.4em 0.4em 0.4em;
   -webkit-border-radius: 0.4em 0.4em 0.4em 0.4em;
 }
-#section1 .box1 li:last-child a{
+.section1 .box1 li:last-child a{
   color: #728099;
   padding: 0.9em;
   float: left;
 }
-
-
-/*formato de la segunda sección*/
-
-#section2 .box2{
-  width: 26em;
-  float: left;
-  margin-left: 9em;
-  padding-top: 3em;
-}
-#section2 p{
-margin-bottom: 5em;
-}
-#section2 #img2{
+/*formato de la info final del contenedor blanco*/
+#sub2{
+  margin-top: 2em;
+  font-size: 0.6em;
   width: 30em;
-  margin-left: 5em;
-  /*outline: 1px solid black;*/
-  padding-top: 3em;
+  margin-left: 9em;
+  line-height: 2em;
+  color: #728099;
 }
-#section2{
-  background: linear-gradient(#76278F, #2B1E66);
+/*formato de la segunda sección*/
+.section2{
+  background: linear-gradient(#681C83, #2B1E66);
   color: white;
   width: 100%;
   height: 38em;
   float: left;
 }
+/*formato del texto de la sección2*/
+.section2 .box2{
+  width: 26em;
+  float: left;
+  margin-left: 9em;
+  padding-top: 3em;
+}
+.section2 p{
+  margin-bottom: 5em;
+}
+/*formato de la imagen de la sección2*/
+.section2 #img2{
+  width: 30em;
+  margin-left: 5em;
+  padding-top: 3em;
+/*outline: 1px solid black;*/
+}
+
 /*Formato de la tercera sección*/
+.section3{
+  margin-top: 38em;
+}
+.contenedor{
+  margin-top: -0.25em;
+  /*outline: 1px solid yellow;*/
+}
+/*formato de los videos*/
 iframe{
-  width: 50em;
-  height: 30em;
+  width: 51em;
+  height: 28em;
   border: 0;
+  margin: 0;
+/*outline: 0.1em solid yellow;*/
 }
-.video1 h1{
-
-}
-.video1 #parrafo2{
-
+/*formato de los contenedores*/
+.box3 {
+  margin: 0;
+  float: left;
   width: 25em;
-display: inline-block;
+  height: 28em;
+  background: white;
+  padding-left: 3em;
+/*outline: 0.1em solid red;*/
 }
-
+.box5 {
+  margin: 0;
+  float: left;
+  width: 25em;
+  height: 28em;
+  background: white;
+  padding-left: 3em;
+/*outline: 0.1em solid red;*/
+}
+/*formato texto*/
+.box3 p, .box4 p, .box5 p{
+  width: 21em;
+  padding-top: 2em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.box3 h1, .box4 h1, .box5 h1{
+  line-height: 0.05em;
+}
+.box4 {
+  float: right;
+  display: inline-block;
+  width: 25em;
+  height: 28em;
+  background: white;
+  margin-right: 0;
+  left: 50px;
+  top: 50px;
+  /*outline: 0.1em solid green;*/
+  padding-left: 3em;
+}
+/*Formato del pie de página*/
 footer{
   background-color: #333447;
   color: white;
-  padding: 0.2em;
-  text-align: center;
   width: 100%;
-  height: 10em;
-  outline: 2px solid red;
+  height: 35em;
+  margin-top: -0.7em;
+  overflow: auto;
+}
+/*formato del menú vertical*/
+.footer1 {
+  float: left;
+  list-style: none;
+  text-align: left;
+  margin-left: 5em;
+}
+.footer1 li a{
+  text-decoration: none;
+  line-height: 3em;
+  color: white;
+}
+.footer1 li a:hover{
+  line-height: 3em;
+  color: #FF00BF;
+  text-decoration: underline;
+}
+.footer1 li:first-child {
+  font-weight: bold;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+.logos{
+  line-height: 4em;
+  list-style: none;
+  float: left;
+  margin-left: 10em;
+}
+.logos img{
+  width: 8em;
+}
+.logos li:first-child{
+  padding-top: 5em;
+}
+.iconos{
+  font-size: 1.5em;
+  margin-top: 17em;
+  text-align: center;
+}
+.icon-facebook{
+  margin-right: 2em;
+}
+.icon-instagram {
+  margin-right: 2em;
+}
+footer hr{
+  width: 25em;
+}
+.footer2{
+  text-align: center;
+}
+.footer2 p{
+  display: inline-block;
+}
+.footer2 a{
+  color: white;
+  text-decoration: none;
+}
+.footer2 a:hover{
+  color: #FF00BF;
+  text-decoration: underline;
 }
