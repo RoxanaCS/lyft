@@ -7,8 +7,8 @@ Maqueteado de Lyft: consta de 3 secciones, más una cabecera y un pie de página
 + Linkera css al html.
 + Imágenes disponibles en carpeta assets/images.
 + Darle formato al body para que no tenga márgenes y sea del ancho de la pantalla.
-+ Iconos disponibles en http://fontawesome.io Descargar carpeta y agregarla a la carpeta misma carpeta en donde se está trabajando para poder usarlos.
-+ Linkear carpeta de iconos en el html.
++ Iconos disponibles en https://icomoon.io/app/#/select Descargar carpeta y agregarla a la carpeta misma carpeta en donde se está trabajando para poder usarlos.
++ Linkear css de estilo de los iconos en el html.
 
 ## Header (Cabecera)
 + Crear menú de 4 secciones que cambien de color al pasar el cursor por encima, ubicar este menú al extremo superior derecho de la página.
