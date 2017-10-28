@@ -1,7 +1,7 @@
 /*limpiar el body*/
 body {
   margin: 0 auto;
-  overflow-x: hidden; /*esto funciona, pero no lo entiendo*/
+  overflow-x: hidden;
   float: left;
   font-family: 'Montserrat', sans-serif;
 }
@@ -9,19 +9,19 @@ body {
 header{
   position: fixed;
   width: 100%;
-/*outline: 1px solid green;*/
+  /*outline: 0.1em solid green;*/
 }
  header #logo{
   width: 4em;
   float: left;
   margin: 0.5em 5em 0 5em;
-  /*outline: 1em solid green;*/
+  /*outline: 0.1em solid green;*/
 }
 header #logo2{
   width: 0;
   float: left;
   margin: 0.5em 0 0 5em;
-/*outline: 1em solid green;*/
+  /*outline: 0.1em solid green;*/
 }
 /*formato del menú horizontal*/
 header nav ul{
@@ -35,7 +35,7 @@ header nav li {
   margin-top: 1em;
   margin-left: 3em;
   float: left;
-/*outline: 1em solid green;*/
+  /*outline: 0.1em solid green;*/
 }
 header nav li:last-child {
   margin-top: 0.2em;
@@ -65,14 +65,14 @@ header nav a:hover {
   width: 0;
   float: left;
   margin: 0.5em 5em 0 5em;
-/*outline: 1em solid green;*/
+  /*outline: 0.1em solid green;*/
 }
 /*para que el logo cambie de blanco a rosado*/
 .header2 #logo2{
   width: 4em;
   float: left;
   margin-left: -5em;
-/*outline: 1em solid green;*/
+  /*outline: 0.1em solid green;*/
 }
 /*formato del menú horizontal*/
 .header2 nav ul{
@@ -86,7 +86,7 @@ header nav a:hover {
   margin-top: 1em;
   margin-left: 3em;
   float: left;
-/*outline: 1em solid green;*/
+  /*outline: 1em solid green;*/
 }
 .header2 nav li:last-child {
   margin-top: 0.2em;
@@ -107,13 +107,9 @@ header nav a:hover {
   color: #FF00BF;
 }
 /*formato de la primera sección*/
-.section1{
-/*outline: 2px solid yellow;*/
-}
 /*poner el video de fondo*/
-/*ARREGLAR ESTO*/
 video{
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: -1;
   margin-top: -5.5em;
@@ -128,7 +124,7 @@ video{
   margin-left: 46em;
   left: 50px;
   top: 50px;
-/*outline: 0.1em solid red;*/
+  /*outline: 0.1em solid red;*/
 }
 /*formato del título del contenedor blanco*/
 .section1 h1{
@@ -195,6 +191,8 @@ video{
   width: 100%;
   height: 38em;
   float: left;
+  /*sombra para que haya un efecto difumidado entre el fondo de la sección 1 y la sección2*/
+  box-shadow: -3em -4em 10em 1.5em #681C83;
 }
 /*formato del texto de la sección2*/
 .section2 .box2{
@@ -211,7 +209,7 @@ video{
   width: 30em;
   margin-left: 5em;
   padding-top: 3em;
-/*outline: 1px solid black;*/
+  /*outline: 0.1em solid black;*/
 }
 
 /*Formato de la tercera sección*/
@@ -220,7 +218,7 @@ video{
 }
 .contenedor{
   margin-top: -0.25em;
-  /*outline: 1px solid yellow;*/
+  /*outline: 0.1em solid yellow;*/
 }
 /*formato de los videos*/
 iframe{
@@ -228,7 +226,7 @@ iframe{
   height: 28em;
   border: 0;
   margin: 0;
-/*outline: 0.1em solid yellow;*/
+  /*outline: 0.1em solid yellow;*/
 }
 /*formato de los contenedores*/
 .box3 {
@@ -238,7 +236,7 @@ iframe{
   height: 28em;
   background: white;
   padding-left: 3em;
-/*outline: 0.1em solid red;*/
+  /*outline: 0.1em solid red;*/
 }
 .box5 {
   margin: 0;
@@ -247,7 +245,7 @@ iframe{
   height: 28em;
   background: white;
   padding-left: 3em;
-/*outline: 0.1em solid red;*/
+  /*outline: 0.1em solid red;*/
 }
 /*formato texto*/
 .box3 p, .box4 p, .box5 p{
@@ -302,6 +300,7 @@ footer{
   margin-top: 3em;
   margin-bottom: 2em;
 }
+/*formato de los logos*/
 .logos{
   line-height: 4em;
   list-style: none;
@@ -314,21 +313,38 @@ footer{
 .logos li:first-child{
   padding-top: 5em;
 }
+/*formato de los iconos*/
 .iconos{
   font-size: 1.5em;
   margin-top: 17em;
   text-align: center;
 }
 .icon-facebook{
-  margin-right: 2em;
-  padding: 1em;
-
+  font-size: 0.6em;
+  color: white;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+  border: 0.1em solid white;
+  border-radius: 50%;
+}
+.icon-twitter {
+  font-size: 0.6em;
+  color: white;
+  padding: 0.5em 0.55em 0.5em 0.55em;
+  border: 0.1em solid white;
+  border-radius: 50%;
 }
 .icon-instagram {
+  font-size: 0.6em;
+  color: white;
+  padding: 0.5em 0.55em 0.5em 0.55em;
+  border: 0.1em solid white;
+  border-radius: 50%;
+  margin-left: 2em;
   margin-right: 2em;
 }
 footer hr{
   width: 25em;
+  margin-top: 1em;
 }
 .footer2{
   text-align: center;
